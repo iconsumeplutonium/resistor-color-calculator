@@ -1,0 +1,15 @@
+C:\Users\Umair\source\repos\resistor-color-calculator\ResistorCalculator\ResistorCalculator\bin\Debug\ResistorCalculator.exe.config
+C:\Users\Umair\source\repos\resistor-color-calculator\ResistorCalculator\ResistorCalculator\bin\Debug\ResistorCalculator.exe
+C:\Users\Umair\source\repos\resistor-color-calculator\ResistorCalculator\ResistorCalculator\bin\Debug\ResistorCalculator.pdb
+C:\Users\Umair\source\repos\resistor-color-calculator\ResistorCalculator\ResistorCalculator\obj\Debug\ResistorCalculator.csproj.AssemblyReference.cache
+C:\Users\Umair\source\repos\resistor-color-calculator\ResistorCalculator\ResistorCalculator\obj\Debug\MainWindow.g.cs
+C:\Users\Umair\source\repos\resistor-color-calculator\ResistorCalculator\ResistorCalculator\obj\Debug\App.g.cs
+C:\Users\Umair\source\repos\resistor-color-calculator\ResistorCalculator\ResistorCalculator\obj\Debug\ResistorCalculator_MarkupCompile.cache
+C:\Users\Umair\source\repos\resistor-color-calculator\ResistorCalculator\ResistorCalculator\obj\Debug\ResistorCalculator_MarkupCompile.lref
+C:\Users\Umair\source\repos\resistor-color-calculator\ResistorCalculator\ResistorCalculator\obj\Debug\MainWindow.baml
+C:\Users\Umair\source\repos\resistor-color-calculator\ResistorCalculator\ResistorCalculator\obj\Debug\ResistorCalculator.g.resources
+C:\Users\Umair\source\repos\resistor-color-calculator\ResistorCalculator\ResistorCalculator\obj\Debug\ResistorCalculator.Properties.Resources.resources
+C:\Users\Umair\source\repos\resistor-color-calculator\ResistorCalculator\ResistorCalculator\obj\Debug\ResistorCalculator.csproj.GenerateResource.cache
+C:\Users\Umair\source\repos\resistor-color-calculator\ResistorCalculator\ResistorCalculator\obj\Debug\ResistorCalculator.csproj.CoreCompileInputs.cache
+C:\Users\Umair\source\repos\resistor-color-calculator\ResistorCalculator\ResistorCalculator\obj\Debug\ResistorCalculator.exe
+C:\Users\Umair\source\repos\resistor-color-calculator\ResistorCalculator\ResistorCalculator\obj\Debug\ResistorCalculator.pdb

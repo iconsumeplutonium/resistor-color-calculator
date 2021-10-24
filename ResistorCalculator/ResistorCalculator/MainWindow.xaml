@@ -5,9 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ResistorCalculator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <ComboBox x:Name="Band1" HorizontalAlignment="Left" Margin="213,131,0,0" VerticalAlignment="Top" Width="158" SelectionChanged="Band1_SelectionChanged">
+        Title="Resistor Color Code Calculator" Height="450" Width="800" ResizeMode="NoResize">
+    <Grid Margin="0,2,-0.4,-2">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="121*"/>
+            <ColumnDefinition Width="673*"/>
+        </Grid.ColumnDefinitions>
+        <ComboBox x:Name="Band1" HorizontalAlignment="Left" Margin="53,87,0,0" VerticalAlignment="Top" Width="158" SelectionChanged="Band1_SelectionChanged" Grid.ColumnSpan="2">
             <ComboBoxItem>
                 <StackPanel Orientation="Horizontal" Width="94">
                     <Image Source="https://cdn.discordapp.com/attachments/690652979036028929/900940486167101540/Untitled.png" />
@@ -160,6 +164,479 @@
                 </StackPanel>
             </ComboBoxItem>
         </ComboBox>
+        <Label Content="Band 1" HorizontalAlignment="Left" Margin="47,61,0,0" VerticalAlignment="Top" FontSize="17" Height="37" Width="62"/>
 
+        <ComboBox x:Name="Band2" HorizontalAlignment="Left" Margin="53,160,0,0" VerticalAlignment="Top" Width="158" SelectionChanged="Band2_SelectionChanged" Grid.ColumnSpan="2">
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal" Width="94">
+                    <Image Source="https://cdn.discordapp.com/attachments/690652979036028929/900940486167101540/Untitled.png" />
+                    <TextBlock Foreground="Black" RenderTransformOrigin="0.5,0.5">
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform Y="3" X="4"/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>Black</TextBlock>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="https://cdn.discordapp.com/attachments/690652979036028929/900941530297151548/brown.png" />
+                    <TextBlock Foreground="#FF512627" RenderTransformOrigin="0.5,0.5" Width="43">
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform Y="3" X="3"/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>Brown</TextBlock>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="https://cdn.discordapp.com/attachments/690652979036028929/900942798709198908/red.png"/>
+                    <TextBlock Foreground="Red" RenderTransformOrigin="0.5,0.5" Width="29">
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform Y="3" X="3"/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>Red</TextBlock>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal" Width="69">
+                    <Image Source="https://cdn.discordapp.com/attachments/690652979036028929/900943648890433636/orange.png" />
+                    <TextBlock Foreground="Orange">Orange
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform Y="3" X="3"/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal" Width="69">
+                    <Image Source="https://cdn.discordapp.com/attachments/690652979036028929/900945253564051486/yellow.png" />
+                    <TextBlock Foreground="Yellow">Yellow
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform Y="3" X="3"/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal" Width="69">
+                    <Image Source="https://cdn.discordapp.com/attachments/690652979036028929/900945642040459284/green.png" />
+                    <TextBlock Foreground="Green">Green
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform Y="3" X="3"/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal" Width="69">
+                    <Image Source="https://cdn.discordapp.com/attachments/690652979036028929/900949502695972884/blue.png" />
+                    <TextBlock Foreground="Blue ">Blue
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform Y="3" X="3"/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal" Width="69">
+                    <Image Source="https://cdn.discordapp.com/attachments/690652979036028929/900950736395960390/violet.png" />
+                    <TextBlock Foreground="Violet">Violet
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform Y="3" X="3"/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal" Width="69">
+                    <Image Source="https://cdn.discordapp.com/attachments/690652979036028929/900951042588565504/gray.png" />
+                    <TextBlock Foreground="Gray">Gray
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform Y="3" X="3"/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal" Width="69">
+                    <Image Source="https://cdn.discordapp.com/attachments/690652979036028929/900951258188357662/white.png" >
+                        <Image.Effect>
+                            <DropShadowEffect BlurRadius="15" Opacity="0.2"/>
+                        </Image.Effect>
+                    </Image>
+                    <TextBlock Foreground="Black">White
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform Y="3" X="3"/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                </StackPanel>
+            </ComboBoxItem>
+        </ComboBox>
+        <Label Content="Band 2" HorizontalAlignment="Left" Margin="47,134,0,0" VerticalAlignment="Top" FontSize="17" Height="37" Width="62"/>
+
+        <ComboBox x:Name="Band3" HorizontalAlignment="Left" Margin="53,230,0,0" VerticalAlignment="Top" Width="158" SelectionChanged="Band3_SelectionChanged" Grid.ColumnSpan="2">
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal" Width="94">
+                    <Image Source="https://cdn.discordapp.com/attachments/690652979036028929/900940486167101540/Untitled.png" />
+                    <TextBlock Foreground="Black" RenderTransformOrigin="0.5,0.5">
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform Y="3" X="4"/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>Black</TextBlock>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="https://cdn.discordapp.com/attachments/690652979036028929/900941530297151548/brown.png" />
+                    <TextBlock Foreground="#FF512627" RenderTransformOrigin="0.5,0.5" Width="43">
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform Y="3" X="3"/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>Brown</TextBlock>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="https://cdn.discordapp.com/attachments/690652979036028929/900942798709198908/red.png"/>
+                    <TextBlock Foreground="Red" RenderTransformOrigin="0.5,0.5" Width="29">
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform Y="3" X="3"/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>Red</TextBlock>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal" Width="69">
+                    <Image Source="https://cdn.discordapp.com/attachments/690652979036028929/900943648890433636/orange.png" />
+                    <TextBlock Foreground="Orange">Orange
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform Y="3" X="3"/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal" Width="69">
+                    <Image Source="https://cdn.discordapp.com/attachments/690652979036028929/900945253564051486/yellow.png" />
+                    <TextBlock Foreground="Yellow">Yellow
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform Y="3" X="3"/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal" Width="69">
+                    <Image Source="https://cdn.discordapp.com/attachments/690652979036028929/900945642040459284/green.png" />
+                    <TextBlock Foreground="Green">Green
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform Y="3" X="3"/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal" Width="69">
+                    <Image Source="https://cdn.discordapp.com/attachments/690652979036028929/900949502695972884/blue.png" />
+                    <TextBlock Foreground="Blue ">Blue
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform Y="3" X="3"/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal" Width="69">
+                    <Image Source="https://cdn.discordapp.com/attachments/690652979036028929/900950736395960390/violet.png" />
+                    <TextBlock Foreground="Violet">Violet
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform Y="3" X="3"/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal" Width="69">
+                    <Image Source="https://cdn.discordapp.com/attachments/690652979036028929/900951042588565504/gray.png" />
+                    <TextBlock Foreground="Gray">Gray
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform Y="3" X="3"/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal" Width="69">
+                    <Image Source="https://cdn.discordapp.com/attachments/690652979036028929/900951258188357662/white.png" >
+                        <Image.Effect>
+                            <DropShadowEffect BlurRadius="15" Opacity="0.2"/>
+                        </Image.Effect>
+                    </Image>
+                    <TextBlock Foreground="Black">White
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform Y="3" X="3"/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal" Width="69">
+                    <Image Source="https://cdn.discordapp.com/attachments/690652979036028929/901625528639967262/gold.png" />
+                    <TextBlock Foreground="Gold ">Gold
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform Y="3" X="3"/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal" Width="69">
+                    <Image Source="https://cdn.discordapp.com/attachments/690652979036028929/901625533681532958/silver.png" />
+                    <TextBlock Foreground="Silver ">Silver
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform Y="3" X="3"/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                </StackPanel>
+            </ComboBoxItem>
+
+        </ComboBox>
+        <Label Content="Band 3" HorizontalAlignment="Left" Margin="47,203,0,0" VerticalAlignment="Top" FontSize="17" Height="37" Width="62"/>
+
+        <ComboBox x:Name="Band4" HorizontalAlignment="Left" Margin="53,303,0,0" VerticalAlignment="Top" Width="158" SelectionChanged="Band4_SelectionChanged" Grid.ColumnSpan="2">
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="https://cdn.discordapp.com/attachments/690652979036028929/900941530297151548/brown.png" />
+                    <TextBlock Foreground="#FF512627" RenderTransformOrigin="0.5,0.5" Width="43">
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform Y="3" X="3"/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>Brown</TextBlock>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="https://cdn.discordapp.com/attachments/690652979036028929/900942798709198908/red.png"/>
+                    <TextBlock Foreground="Red" RenderTransformOrigin="0.5,0.5" Width="29">
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform Y="3" X="3"/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>Red</TextBlock>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal" Width="69">
+                    <Image Source="https://cdn.discordapp.com/attachments/690652979036028929/900945642040459284/green.png" />
+                    <TextBlock Foreground="Green">Green
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform Y="3" X="3"/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal" Width="69">
+                    <Image Source="https://cdn.discordapp.com/attachments/690652979036028929/900949502695972884/blue.png" />
+                    <TextBlock Foreground="Blue ">Blue
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform Y="3" X="3"/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal" Width="69">
+                    <Image Source="https://cdn.discordapp.com/attachments/690652979036028929/900950736395960390/violet.png" />
+                    <TextBlock Foreground="Violet">Violet
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform Y="3" X="3"/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal" Width="69">
+                    <Image Source="https://cdn.discordapp.com/attachments/690652979036028929/900951042588565504/gray.png" />
+                    <TextBlock Foreground="Gray">Gray
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform Y="3" X="3"/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal" Width="69">
+                    <Image Source="https://cdn.discordapp.com/attachments/690652979036028929/901625528639967262/gold.png" />
+                    <TextBlock Foreground="Gold ">Gold
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform Y="3" X="3"/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal" Width="69">
+                    <Image Source="https://cdn.discordapp.com/attachments/690652979036028929/901625533681532958/silver.png" />
+                    <TextBlock Foreground="Silver ">Silver
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform Y="3" X="3"/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                </StackPanel>
+            </ComboBoxItem>
+
+        </ComboBox>
+        <Label Content="Band 4" HorizontalAlignment="Left" Margin="47,277,0,0" VerticalAlignment="Top" FontSize="17" Height="37" Width="62"/>
+
+
+        <Label x:Name="ResistanceLabel" Content="" HorizontalAlignment="Left" Margin="182.8,240,0,0" VerticalAlignment="Top" FontSize="48" Width="403" HorizontalContentAlignment="Center" Grid.Column="1"/>
+        <Image x:Name="ResistorImageStatic" HorizontalAlignment="Left" Height="133" Margin="182.8,56,0,0" VerticalAlignment="Top" Width="403" Source="res2.png" Grid.Column="1"/>
+        <Rectangle x:Name="ImgBand1" Fill="#FFB8B8C7" HorizontalAlignment="Left" Height="74" Margin="294.8,78,0,0" VerticalAlignment="Top" Width="20" StrokeThickness="0" Grid.Column="1"/>
+        <Rectangle x:Name="ImgBand2" Fill="#FFB8B8C7" HorizontalAlignment="Left" Height="74" Margin="323.8,78,0,0" VerticalAlignment="Top" Width="20" StrokeThickness="0" Grid.Column="1"/>
+        <Rectangle x:Name="ImgBand3" Fill="#FFB8B8C7" HorizontalAlignment="Left" Height="74" Margin="382.8,78,0,0" VerticalAlignment="Top" Width="20" StrokeThickness="0" Grid.Column="1"/>
+        <Rectangle x:Name="ImgBand4" Fill="#FFB8B8C7" HorizontalAlignment="Left" Height="74" Margin="440.8,78,0,0" VerticalAlignment="Top" Width="20" StrokeThickness="0" Grid.Column="1"/>
+        <Label x:Name="ToleranceLabel" Content="" HorizontalAlignment="Left" Margin="183.2,302,0,0" VerticalAlignment="Top" FontSize="36" Width="403" HorizontalContentAlignment="Center" Grid.Column="1"/>
     </Grid>
 </Window>
